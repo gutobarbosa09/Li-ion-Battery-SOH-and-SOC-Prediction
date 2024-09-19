@@ -1048,7 +1048,6 @@ models = {
 
 # Iteramos por los modelos para crear las variables con las predicciones
 for model_name, (train_75, train_50) in models.items():
-    # Create SOH variables for 75 and 50
     dfs['B0005'][f'SOH_{model_name}_75'] = train_75
     dfs['B0005'][f'SOH_{model_name}_50'] = train_50
 
